@@ -9,7 +9,6 @@ self.addEventListener("install", event => {
             .then(response => response.json())
             .then(manifestFiles => {
                 const all_assets = cache_assets.concat(manifestFiles);
-                alert(all_assets);
                 return caches.open(CACHE_NAME).then(cache => cache.addAll(all_assets));
             }).catch(error => {
                 console.log("No manifest found, caching only core assets:", error);
