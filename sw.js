@@ -15,6 +15,7 @@ self.addEventListener("install", event => {
                 return caches.open(CACHE_NAME).then(cache => cache.addAll(cache_assets));
             })
     );
+    self.skipWaiting();
 });
 
 self.addEventListener("activate", event => {
@@ -24,6 +25,7 @@ self.addEventListener("activate", event => {
             if (cacheWhitelist.indexOf(cacheName) === -1) return caches.delete(cacheName);
         }));
     }));
+    self.clients.claim();
 });
 
 self.addEventListener("fetch", event => {

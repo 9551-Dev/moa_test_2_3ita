@@ -1,5 +1,6 @@
 const db_name    = "nerf_db";
 const table_name = "loadouts";
+
 let database = null;
 
 function open_db() {
@@ -10,7 +11,7 @@ function open_db() {
             db.createObjectStore(table_name,{keyPath:"id",autoIncrement:true});
         }
     };
-    new_db.onsuccess = (val) => { database = val.target.result; show_all(); };
+    new_db.onsuccess = (val) => {database=val.target.result; show_all();};
 }
 
 function show_all() {

@@ -1,5 +1,6 @@
 const db_name    = "nerf_db";
 const table_name = "loadouts";
+
 let database = null;
 
 function open_db() {
