@@ -8,8 +8,9 @@ self.addEventListener("install", event => {
         fetch("/resources_manifest.json")
             .then(response => response.json())
             .then(manifestFiles => {
-                const allAssets = cache_assets.concat(manifestFiles);
-                return caches.open(CACHE_NAME).then(cache => cache.addAll(allAssets));
+                const all_assets = cache_assets.concat(manifestFiles);
+                alert(all_assets);
+                return caches.open(CACHE_NAME).then(cache => cache.addAll(all_assets));
             }).catch(error => {
                 console.log("No manifest found, caching only core assets:", error);
                 return caches.open(CACHE_NAME).then(cache => cache.addAll(cache_assets));
