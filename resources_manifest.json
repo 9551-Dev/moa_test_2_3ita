@@ -1,0 +1,18 @@
+[
+  "/index.html",
+  "/manifest.json",
+  "/sw_register.js",
+  "/scripts/index.js",
+  "/scripts/favorite.js",
+  "/resources/NerfElite2_logo.png",
+  "/resources/Warden.png",
+  "/resources/Volt.png",
+  "/resources/Turbine.png",
+  "/resources/Phoenix.png",
+  "/resources/Eaglepoint.png",
+  "/resources/Commander.png",
+  "/resources/Empty.png",
+  "/favorite/index.html",
+  "/style/index.css",
+  "/style/favorite.css"
+]

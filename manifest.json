@@ -1,0 +1,8 @@
+{
+    "name": "NERF CONFIG INDEXDB",
+    "short_name": "NCIDXDB",
+    "description": "Nerf Konfigurator s IndexedDB",
+    "start_url": "/index.html",
+    "display": "standalone",
+    "icons": []
+}

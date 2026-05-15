@@ -1,0 +1,48 @@
+body {
+    font-family: sans-serif;
+    padding: 1rem;
+    background: #141617;
+    color: #e0e0e0;
+}
+.row {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+}
+.card {
+    background: #292929;
+    margin: 0.5rem 0;
+    padding: 0.8rem;
+    border-left: 6px solid #FFA31A;
+    flex: 1;
+    min-width: 200px;
+}
+select {
+    width: 100%;
+    padding: 0.3rem;
+    margin: 0.5rem 0;
+    background: #292929;
+    color: #e0e0e0;
+    border: 1px solid #808080;
+}
+img {
+    max-width: 100%;
+    max-height: 100px;
+    display: block;
+    margin-top: 0.5rem;
+}
+button {
+    margin-left: 0.5rem;
+    padding: 0.2rem 0.7rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+}
+button:active {
+    transform: scale(0.97);
+}
+h2 {
+    color: #FFA31A;
+}

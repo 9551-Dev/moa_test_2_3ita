@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>NERF loadouts</title>
+    <link rel="stylesheet" href="/style/index.css">
+    <script src="sw_register.js" defer></script>
+</head>
+<body>
+    <h2>NERF LOADOUT</h2>
+    <div class="row">
+        <div class="card">
+            <strong>PRIMARY</strong>
+            <select id="primary_select">
+                <option value="">—</option>
+                <option value="Eaglepoint">Eaglepoint</option>
+                <option value="Turbine">Turbine</option>
+                <option value="Phoenix">Phoenix</option>
+            </select>
+            <img id="primary_img">
+        </div>
+        <div class="card">
+            <strong>SECONDARY</strong>
+            <select id="secondary_select">
+                <option value="">—</option>
+                <option value="Warden">Warden</option>
+                <option value="Commander">Commander</option>
+                <option value="Volt">Volt</option>
+            </select>
+            <img id="secondary_img">
+        </div>
+    </div>
+    <div>
+        <button id="save_btn" style="background: #014995; color: #FFFFFF">SAVE TO FAVORITES</button>
+        <button id="fav_btn"  style="background: #A5DE9E">MY FAVORITES</button>
+    </div>
+    <script src="./scripts/index.js"></script>
+</body>
+</html>
